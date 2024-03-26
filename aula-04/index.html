@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04 📋</title>
+</head>
+
+<body bgcolor="	#7B68EE" text="white">
+    <!--https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/center-->
+    <!--https://www.w3schools.com/tags/tag_meta.asp-->
+    <!--https://erikasarti.com/html/tabela-cores/-->
+    <!--https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/marquee-->
+    <marquee behavior="slide" direction="right"></marquee>
+    <center>
+        <h1><strong>Formulário 📋 </strong></h1><br>
+        <form action="dados.php" method="post">
+            💠 Login: <input type="text" name="nome" placeholder="Nome" size="15"> <br> <br>
+            <!--post é mais seguro-->
+            <!--value aparece um texto-->
+            <!---->
+            
+            💠 Senha: <input type="password" name="senha" placeholder="Senha" size="15" maxlength="4"> <br> <br>
+            <input type="submit" name="enviar" value="ENVIAR"> <br> <br>
+        </form>
+    </center>
+    <center>
+        <form action="dados.php" method="post">
+            <input type="checkbox" name="curso" value="AW1"> AW1 <br>
+            <input type="checkbox" name="curso" value="LP2"> LP2 <br>
+            <input type="checkbox" name="curso" value="LP3"> LP3 <br>
+            <input type="checkbox" name="curso" value="TDS"> TDS <br>
+            <input type="checkbox" name="curso" value="TPO"> TPO <br> <br>
+
+            Turnos: 
+            <input type="radio" name="turno" value="Manhã"> Manhã  
+            <input type="radio" name="turno" value="Tarde"> Tarde
+            <input type="radio" name="turno" value="Noturno"> Noturno <br>
+
+            Escolha seu professor: 
+            <select name="prof" multiple>
+                <option value="Igor"> Igor </option>
+                <option value="Motta"> Motta </option>
+                <option value="Latorre"> Latorre </option> 
+            </select> <br> <br>
+            <!--coloca o mesmo nome e ai nao seleciona td -->
+            Faça um comentário: <br><br>
+            <textarea cols="25" rows="5">O luk é ...</textarea> <br><br>
+            0 <input id="percent"type="range" Oninput= "getElementById('exibePercent').innerHTML=this.value;" min="0" max="100" value="0"> <span id="exibePercent">100 </span>
+            <label for="Volume"></label>
+            <!--span na mesma linha-->
+            <input type="submit" name="cursos" value="confirmar matérias">
+            <!-- RESET - limpar o valores-->
+            <input type="reset" value="limpar">
+
+        </form>
+    </center>
+    
+      
+</body>
+</html>
