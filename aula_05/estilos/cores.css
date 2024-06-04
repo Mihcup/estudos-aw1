@@ -1,0 +1,24 @@
+h1{
+    color: #181818;
+    background-color: rgb(181, 134, 199);
+    text-align: center;
+    font-family: cursive;
+    font-size: 30;
+    margin: 50px;
+    border-radius: 45px;
+    padding: 25px;
+    border: solid;
+    border-color: #660d8a;
+    width: 25%;
+    height: 20%;
+    text-shadow: 1px 3px 2px #8a53a0;
+}
+
+body{
+    background-color: #d4b7ec;
+    /*pode aplicar várias propriedades*/
+    display: flex;
+    justify-content: center; 
+    /*usa para conseguir centralizar o h1*/
+}
+
