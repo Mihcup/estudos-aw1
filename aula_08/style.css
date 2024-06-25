@@ -1,0 +1,76 @@
+:root{
+    --vermelho: #F2274C;
+    --rosa: #F27999;
+    --azul_escuro: #0477BF; 
+    --azul_claro: #048ABF;
+    --amarelo: #F2BF80;
+}
+body{
+    background-color: #7acef0;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-content: center;   
+    color: var(--azul_escuro); 
+}
+p{
+    animation-duration: 3s;
+    /* quanto tempo demora, a velocidade que faz */
+    animation-name: MIh; 
+    animation-iteration-count: infinite;
+    /* determina quanto tempo fica rodando/mexendo */
+    animation-direction:alternate-reverse; 
+}
+
+h2{
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--rosa);
+    animation-name: text;
+    animation-duration: 5s;
+
+}
+
+#A{
+    animation-fill-mode: none;
+}
+#B{
+    animation-fill-mode: forwards;
+}
+
+#C{
+    animation-fill-mode: backwards;
+    animation-delay: 3s;
+}
+#D{
+    animation-fill-mode: both;
+    animation-delay: 3s;
+}
+@keyframes MIh{
+    /* subclasse */
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+
+}
+
+@keyframes text{
+    from{
+        margin-left: 0;
+        background-color: #0477BF;
+    }
+
+    to{
+        margin-left: 30%;
+        background-color: #2760ca;
+    }
+}
