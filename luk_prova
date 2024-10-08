@@ -223,3 +223,14 @@ button.addEventListener('click', function() {
     button.style.backgroundColor = 'blue'; // Alterar o estilo ao clicar
     alert("Botão foi clicado!");
 });
+
+//forEach 
+let text = "";
+const fruits = ["apple", "orange", "cherry"];
+fruits.forEach(myFunction);
+
+document.getElementById("demo").innerHTML = text;
+ 
+function myFunction(item, index) {
+  text += index + ": " + item + "<br>"; 
+}
